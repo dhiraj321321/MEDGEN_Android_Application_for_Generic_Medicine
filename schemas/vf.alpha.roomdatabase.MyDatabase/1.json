@@ -1,0 +1,87 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a379619f1f1da27dd22c14007245e4b9",
+    "entities": [
+      {
+        "tableName": "MyCart",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`productid` INTEGER NOT NULL, `productName` TEXT, `price` REAL NOT NULL, `discount` REAL NOT NULL, `size` REAL NOT NULL, `tax` REAL NOT NULL, `imageName` TEXT, `productCount` INTEGER NOT NULL, `availableStockQuantity` REAL NOT NULL, `outOfStock` TEXT, PRIMARY KEY(`productid`))",
+        "fields": [
+          {
+            "fieldPath": "productid",
+            "columnName": "productid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "productName",
+            "columnName": "productName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discount",
+            "columnName": "discount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tax",
+            "columnName": "tax",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageName",
+            "columnName": "imageName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "productCount",
+            "columnName": "productCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "availableStockQuantity",
+            "columnName": "availableStockQuantity",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outOfStock",
+            "columnName": "outOfStock",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "productid"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"a379619f1f1da27dd22c14007245e4b9\")"
+    ]
+  }
+}

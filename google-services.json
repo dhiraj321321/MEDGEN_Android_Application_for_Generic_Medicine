@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "321152566418",
+    "project_id": "health-castle-dfc85",
+    "storage_bucket": "health-castle-dfc85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321152566418:android:3a518f634f40a92cd2d24b",
+        "android_client_info": {
+          "package_name": "health.castle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321152566418-9du0pnoanrss8lvhda20h7l458dbsnv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHEMTN6Z0PxAiVRFuPR4RzWxyNxDUp7Xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321152566418-9du0pnoanrss8lvhda20h7l458dbsnv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
